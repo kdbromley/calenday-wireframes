@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    display:grid;
+}
+
+section {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.Schedule__event-list {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+h3 {
+    border: 0.5px solid grey;
+    border-radius: 20%;
+    padding: 15px;
+    margin: 5px;
+}
+
+/*  Week View  */
+
+.Week__day-label {
+    grid-area: date;
+    border: none;
+}
+.Week__time-slot {
+    grid-area: time;
+}
+
+
+.Week__day-grid {
+    display: grid;
+    grid-template-areas: "day day day day day day day"
+}
+
+.Week__day-grid > div {
+    background: beige;
+}
+.Week__day-grid > div:nth-child(odd) {
+    background: lavender;
+}
+
+.Week__day {
+    display: grid inline;
+    grid-template-areas: 
+    "date"
+    "time"
+    "time"
+    "time"
+    "time"
+    "time"
+    "time"
+}
+
+.date {
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 0.25px solid white;
+    border-radius: 50%;
+    background: skyblue;
+    margin: auto;
+}
+
+
+/* Create Event View */
+
+.CreateEvent {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.CreateEvent__form {
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+fieldset {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+
+/* Event Page View */
+

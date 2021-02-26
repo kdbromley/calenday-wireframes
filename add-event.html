@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header role="banner">
+            <h1>Calenday</h1>
+        </header>
+
+        <section class="CreateEvent">
+            <form class="CreateEvent__form">
+                <label for="event-title">Event Title</label>
+                <input id="event-title" type="text" name='event-title'>
+                <fieldset>
+                    <legend>Select date and time:</legend>
+                    <label for='event-date'>Date:</label>
+                    <input id='event-date' type="date">
+                    <label for='time-start'>Time:</label>
+                    <input id='time-start' type="time">
+                    <label for='time-end'>to</label>
+                    <input id='time-end' type="time"> <br />
+                    <label for='recurring'>Recurring?</label>
+                    <input id='recurring' type='checkbox'>
+                </fieldset>
+                <label for='event-description'>Event description:</label>
+                <input id='event-description' type="textarea" size="60"> <br />
+
+                <button type='button'>Cancel</button> 
+                <button type='submit'>Create</button>
+            </form>
+        </section>
+
+          
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+</html>
